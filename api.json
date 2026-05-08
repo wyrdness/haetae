@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-08",
     "repository": "https://github.com/wyrdness/haetae",
     "maintainers": [
       {
@@ -16,71 +16,152 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "haetae",
-    "name": "Haetae (해태)",
-    "aliases": [],
+    "name": "Haetae",
+    "aliases": [
+      { "name": "Haechi", "language": "Korean", "region": "Korea", "meaning": "Variant romanization of the same creature" },
+      { "name": "해태", "language": "Korean", "region": "Korea" },
+      { "name": "Xiezhi", "language": "Chinese", "region": "China", "meaning": "獬豸; the Chinese source figure" },
+      { "name": "Kaichi", "language": "Japanese", "region": "Japan", "meaning": "Japanese reading of 獬豸" },
+      { "name": "Giải trãi", "language": "Vietnamese", "region": "Vietnam" },
+      { "name": "Unicorn-lion", "language": "English", "region": "Western scholarship", "meaning": "Descriptive English name referencing its single horn and leonine body" }
+    ],
     "category": "MYTHOLOGICAL_CREATURE",
-    "subcategory": "Guardian Beast",
+    "subcategory": "Guardian beast / symbol of justice",
     "tags": [
-      "worldwide"
+      "korean",
+      "chinese",
+      "guardian",
+      "justice",
+      "fire-protection",
+      "palace-guardian",
+      "single-horn",
+      "leonine",
+      "east-asia"
     ],
     "status": "documented",
     "description": {
-      "summary": "The Haetae (also spelled Haechi or Haetae) is a legendary lion-like guardian creature from Korean mythology that serves as a powerful symbol of justice, law, and protection.",
-      "full": "The Haetae (also spelled Haechi or Haetae) is a legendary lion-like guardian creature from Korean mythology that serves as a powerful symbol of justice, law, and protection. This mythical beast possesses the ability to distinguish between good and evil, judge the guilty from the innocent, and protect against fire and natural disasters. Most famously, stone statues of Haetae guard the gates of Gyeongbokgung Palace in Seoul, and the creature has become an official symbol of Seoul itself, representing the city's commitment to justice and safety. The Haetae embodies fundamental Korean values of righteousness, moral judgment, and divine protection against chaos."
+      "summary": "The Haetae (also Haechi) is a legendary guardian beast from Korean and Chinese mythology, depicted as a muscular lion-like creature with scales and a single horn, revered as a symbol of justice, law, and protection against fire.",
+      "full": "The Haetae (Korean: 해태; Hanja: 獬豸), known in Chinese as Xiezhi (xièzhì), is a mythological creature shared across East Asian traditions that has taken on particular cultural importance in Korea. In Korean tradition the creature is described as having a muscular leonine body covered with sharp scales, a bell at its neck, and a single long horn on its forehead. The creature is believed to possess great intellect and the innate ability to distinguish right from wrong; according to legend, it would ram the guilty with its horn while sparing the innocent. This judicial quality made the haetae an enduring symbol of law and justice across the region. Stone statues of the haetae guard the gates of Gyeongbokgung Palace in Seoul, where they were placed during the Joseon dynasty to ward off fire disasters. In China, law enforcement officials wore xiezhi crowns from the Qin and Han dynasties onward, and Tang-dynasty censors wore xiezhi hats during impeachment proceedings. The creature continues in modern use: the Haechi cartoon character serves as the official mascot of Seoul, and the People's Republic of China engraves xiezhi imagery on court gavels. In 2022, the prehistoric giraffoid species Discokeryx xiezhi was scientifically named in reference to the creature's distinctive horn."
     },
     "etymology": {
-      "origin": "Korean",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "The Korean name 해태 (haetae) is a Korean reading of the Chinese characters 獬豸. Linguist Axel Schuessler reconstructs the Late Han pronunciation as *gɛʔ-ḍɛʔ* and proposes an Austroasiatic etymology related to words for deer or stag in Old Mon, Old Khmer, and Burmese.",
+      "meaning": "The characters 獬豸 refer to a mythical beast that distinguishes guilt from innocence. The English descriptive name 'unicorn-lion' references its single horn and leonine body.",
+      "first_use": "Earliest literary mentions appear in Han dynasty texts: Sima Xiangru's 'Rhapsody on the Imperial Park' and Wang Chong's Lunheng (c. 80 CE)."
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "MYTHOLOGICAL_CREATURE",
-      "type": "Guardian Beast",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Guardian beast",
+      "subtype": "Justice symbol / fire ward",
+      "variant": "Korean"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "qilin", "name": "Qilin", "relationship": "similar", "description": "Chinese one-horned auspicious beast with overlapping symbolic role" },
+      { "id": "pixiu", "name": "Pixiu", "relationship": "similar", "description": "Chinese guardian beast used in architectural decoration" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "features": [
+        { "feature": "Single horn on forehead", "description": "A single long horn; the defining feature used to ram the guilty", "frequency": "always" },
+        { "feature": "Leonine body", "description": "Muscular, lion-like body; Korean tradition emphasizes the leonine build", "frequency": "always" },
+        { "feature": "Scale-covered skin", "description": "Korean tradition describes the body as covered with sharp scales rather than fur", "frequency": "always" },
+        { "feature": "Bell at neck", "description": "A bell is depicted at the neck in Korean iconography", "frequency": "common" },
+        { "feature": "Thick dark fur (Chinese tradition)", "description": "Chinese xiezhi descriptions refer to thick dark fur; Korean tradition favors scales", "frequency": "common" },
+        { "feature": "Bright eyes", "description": "Described as having bright, perceptive eyes that reflect its judicial intelligence", "frequency": "always" }
+      ],
+      "morphology": "A chimeric guardian beast combining leonine and bovine/ovine elements depending on tradition. Korean versions emphasize a scaled leonine form with a bell; Chinese versions describe a horned ox or goat with thick dark fur. Both share the single horn as the defining feature."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Distinguish guilt from innocence", "description": "The creature innately perceives moral truth and singles out the guilty party in judicial proceedings", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Ram the guilty", "description": "Uses its horn to strike corrupt officials or guilty parties; spares the innocent", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Ward off fire", "description": "In Korean tradition, statues of the haetae are placed at palace gates to prevent fire disasters", "frequency": "always", "evidence_level": "documented" },
+      { "ability": "Protect against evil", "description": "Images carved on locks and architectural elements to ward off evil spirits", "frequency": "common", "evidence_level": "documented" }
+    ],
     "behavior": {
       "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "disposition": "defensive",
+      "social_structure": "solitary",
+      "habitat_preference": ["palace gates", "court buildings", "frontier regions (Manchuria, per Korean records)"],
+      "diet": "Not specified in tradition; focus is on judicial and protective role",
+      "patterns": [
+        "Stationed as guardian at important architectural thresholds",
+        "Activated in judicial contexts to identify the guilty",
+        "Protective posture facing outward from structures"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Korean",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Originating in Chinese mythology and adopted throughout East Asia. Most prominent in Korea, where haetae statues guard palace complexes. Also found in China, Japan, and Vietnam.",
+      "continents": ["Asia"],
+      "countries": ["South Korea", "China", "Japan", "Vietnam"],
+      "regions": [
+        "Korean Peninsula",
+        "Central China",
+        "Manchuria (mythological homeland per Korean records)",
+        "Japan"
+      ]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Gyeongbokgung Palace",
+        "location": {
+          "description": "Main gate area of Gyeongbok Palace, Seoul",
+          "country": "South Korea",
+          "region": "Seoul",
+          "coordinates": { "latitude": 37.5796, "longitude": 126.9770 }
+        },
+        "notes": "Stone haetae statues placed at the palace gates during the Joseon dynasty to ward off fire"
+      },
+      {
+        "name": "Forbidden City",
+        "location": {
+          "description": "Imperial Palace complex, Beijing",
+          "country": "China",
+          "region": "Beijing",
+          "coordinates": { "latitude": 39.9163, "longitude": 116.3972 }
+        },
+        "notes": "Xiezhi sculptures present throughout the complex"
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "c. 80 CE",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Wang Chong, Lunheng (c. 80 CE); earlier references in Sima Xiangru's Han-dynasty texts"
+      },
+      "peak_activity_periods": [
+        { "period": "Qin and Han dynasties (221 BCE – 220 CE)", "description": "Law enforcement officials in China wore xiezhi crowns; judicial role codified" },
+        { "period": "Tang dynasty (618–907 CE)", "description": "Censors wore xiezhi hats during impeachment trials" },
+        { "period": "Joseon dynasty (1392–1897)", "description": "Haetae statues installed at Gyeongbokgung Palace as fire wards" }
+      ]
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Korean",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "The xiezhi/haetae originates in ancient Chinese mythology and was employed in judicial ritual from at least the Han dynasty. It was adopted into Korean court culture during the Joseon dynasty and integrated into palace architecture as a fire-protective guardian.",
+      "earliest_accounts": "Wang Chong's Lunheng (c. 80 CE) documents the judicial application; Sima Xiangru's Han-dynasty rhapsody contains earlier references. Korean adoption is associated with the Joseon dynasty (1392–1897).",
+      "folklore_connections": "Part of a broader East Asian tradition of guardian beasts at architectural thresholds, related to Chinese guardian lions (shishi) and the auspicious qilin."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "c. 80 CE", "event": "Wang Chong documents the xiezhi's judicial role in Lunheng, describing it ramming corrupt officials", "significance": "Earliest clearly dated written account", "source": "Wang Chong, Lunheng" },
+      { "date": "618", "event": "During the Tang dynasty, censors wear xiezhi hats during impeachment trials", "significance": "Official codification of the creature as symbol of censorial oversight", "source": "Wikipedia / Xiezhi article" },
+      { "date": "1392", "event": "Joseon dynasty founded; haetae statues installed at palace gates including Gyeongbokgung to ward off fire", "significance": "Institutional Korean adoption of the haetae as fire guardian", "source": "Wikipedia / Xiezhi article" },
+      { "date": "2008", "event": "The Haechi cartoon character adopted as official mascot of Seoul", "significance": "Modern continuation of the haetae as civic symbol", "source": "Wikipedia / Xiezhi article" },
+      { "date": "2022", "event": "Prehistoric giraffoid species Discokeryx xiezhi named in honor of the creature", "significance": "Scientific recognition of cultural legacy", "source": "Wikipedia / Xiezhi article" }
+    ],
+    "modern_era": "The haetae remains an active symbol in Korean civic life: haetae statues are a defining visual element of Gyeongbokgung Palace, and the Seoul city government uses the cartoon Haechi character as its official mascot. The Republic of China military police wear xiezhi badge insignia, and PRC law courts engrave the creature on gavels."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -91,35 +172,109 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
-    "physical": [],
+    "physical": [
+      {
+        "id": "haetae-evidence-gyeongbok-statues",
+        "type": "architectural sculpture",
+        "name": "Gyeongbokgung Palace haetae statues",
+        "description": "Stone statues of the haetae positioned at the gates of Gyeongbok Palace in Seoul, placed during the Joseon dynasty to ward off fire disasters.",
+        "location": "Gyeongbokgung Palace, Seoul, South Korea",
+        "status": "verified",
+        "analysis": "Physical artifacts in situ at a major UNESCO-recognized heritage site. Document the institutional role of the haetae as protective symbol in Korean court culture.",
+        "source": "Wikipedia / Xiezhi article"
+      }
+    ],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "haetae-evidence-lunheng",
+        "type": "historical text",
+        "name": "Lunheng by Wang Chong (c. 80 CE)",
+        "description": "Han dynasty philosophical text documenting the judicial application of the xiezhi in criminal proceedings under Emperor Shun.",
+        "status": "verified",
+        "analysis": "Earliest clearly dated written account of the creature's judicial role.",
+        "source": "Wang Chong, Lunheng"
+      }
+    ]
   },
+
   "theories": {
     "paranormal": [],
-    "scientific": [],
-    "skeptical": []
+    "scientific": [
+      {
+        "name": "Austroasiatic linguistic origin",
+        "description": "Linguist Axel Schuessler proposes the Chinese name 獬豸 derives from an Austroasiatic root related to words for 'deer' or 'stag' in Old Mon, Old Khmer, and Burmese, suggesting the myth may have originated with accounts of actual horned animals.",
+        "proponents": ["Axel Schuessler"],
+        "evidence_cited": ["Comparative linguistics analysis of Late Han pronunciation reconstruction"]
+      }
+    ],
+    "skeptical": [
+      {
+        "name": "Judicial-political allegory",
+        "description": "The haetae/xiezhi is best understood as a symbolic construct designed to legitimate judicial authority and reinforce norms of official accountability, rather than a belief in a literal animal.",
+        "proponents": ["General scholarly consensus in folklore and legal history"],
+        "evidence_cited": ["Consistent depiction on judicial insignia across multiple dynasties", "Absence of any eyewitness encounter tradition"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Chinese xiezhi tradition — judicial role from at least the Han dynasty",
+        "Korean haetae tradition — fire-protective guardian in palace architecture",
+        "Japanese kaichi mythology"
+      ],
+      "stories": [
+        "Minister Gao Yao employed the xiezhi during Emperor Shun's reign: the beast would ram the guilty and spare the innocent",
+        "King Wen of Chu popularized xiezhi crowns during the Spring and Autumn period"
+      ],
+      "beliefs": "In Korean tradition, haetae statues at palace and temple gates actively protect the buildings from fire and evil. The creature's presence is apotropaic rather than merely decorative."
     },
     "popular_culture": {
-      "literature": [],
+      "literature": [
+        "Sima Xiangru, 'Rhapsody on the Imperial Park' (Han dynasty)",
+        "Wang Chong, Lunheng (c. 80 CE)"
+      ],
       "film_tv": [],
       "games": [],
-      "other": []
+      "other": [
+        "Haechi cartoon character — official mascot of Seoul (adopted 2008)",
+        "Xiezhi engraved on PRC law court gavels",
+        "Republic of China military police xiezhi badge insignia",
+        "Discokeryx xiezhi — prehistoric giraffoid species named in 2022"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
+    "researchers": [
+      { "name": "Axel Schuessler", "affiliation": "Linguistics", "contribution": "Reconstructed Late Han pronunciation and proposed Austroasiatic etymology for 獬豸", "period": "20th–21st century" }
+    ],
     "organizations": [],
-    "ongoing_studies": "None documented"
+    "ongoing_studies": "The haetae features in ongoing Korean cultural heritage scholarship and architectural history of the Joseon dynasty."
   },
-  "sources": []
+
+  "sources": [
+    {
+      "id": "wikipedia-xiezhi",
+      "type": "website",
+      "title": "Xiezhi",
+      "url": "https://en.wikipedia.org/wiki/Xiezhi",
+      "accessed": "2026-05-08"
+    },
+    {
+      "id": "wang-chong-lunheng",
+      "type": "book",
+      "title": "Lunheng",
+      "authors": ["Wang Chong"],
+      "date": "c. 80 CE",
+      "notes": "Han dynasty philosophical encyclopedia; documents xiezhi judicial role"
+    }
+  ]
 }
